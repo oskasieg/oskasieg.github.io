@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <nav>
+    <!-- NAVIGATION -->
+    <nav class='desktop'>
         <ul class='list'>
             <li class='list__el'>Home.</li>
             <li class='list__el'>About.</li>
@@ -17,6 +18,18 @@
             <li class='list__el'>Contact.</li>
         </ul>
     </nav>
+    <button class="hamburger" aria-label="Menu">
+        <span class="hamburger__container" tabindex="-1">
+            <span class="hamburger__bars"></span>
+        </span>
+        <ul class='list'>
+            <li class='list__el'>Home</li>
+            <li class='list__el'>About</li>
+            <li class='list__el'>Projects</li>
+            <li class='list__el'>Contact</li>
+        </ul>
+    </button>
+    <!-- HEADER -->
     <header id='home'>
         <div class='layer'></div>
         <div class='homeWrapper'>
@@ -27,7 +40,7 @@
         <div class='about__left'></div>
         <div class='about__right'></div>
     </section>
-    <section id='projects'>
+    <section id='projects' class='projects'>
         projects
     </section>
     <section id='contact'>

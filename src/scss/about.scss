@@ -1,7 +1,10 @@
 .about {
+  --opacity-val: 1;
+  opacity: var(--opacity-val);
+  transition: opacity 1s;
   min-height: 110%;
   flex: 0 0 100%;
-  background-color: #000000eb;
+  background-image: linear-gradient(to bottom, #000000f2, #484848);
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 2fr;
@@ -9,19 +12,23 @@
   &__left {
     grid-column: 1;
     grid-row: 1;
-    background-color: white;
-    margin: 17% 0% 20% 10%;
+    background-color: #ffffff70;
+    margin: 17% 3% 20% 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px;
   }
   &__right {
     grid-column: 2;
     grid-row: 1;
-    background-color: white;
+    background-color: #ffffff70;
     margin: 15% 6% 15%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px;
   }
   &__right::before {
     content: 'About';
     position: absolute;
-    color: red;
+    color: #00d0bd;
     font-size: 5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transform-origin: 0% 100%;
@@ -30,7 +37,7 @@
   &__right::after {
     content: 'ME';
     position: absolute;
-    color: red;
+    color: #00d0bd;
     font-size: 5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transform: translateY(-6rem);
