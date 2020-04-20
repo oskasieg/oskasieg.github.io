@@ -1,0 +1,51 @@
+header {
+  height: 100%;
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #00788b;
+  border-bottom: solid 5px #a300ff;
+
+  .layer {
+    grid-column: 1;
+    grid-row: 1;
+    background: linear-gradient(#ff0000, 40%, #0030de);
+    background-size: 100% 300%;
+    opacity: 0.5;
+  }
+  .homeWrapper {
+    z-index: 2;
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 5rem;
+    }
+    &__text::after {
+      position: absolute;
+      content: url(https://twemoji.maxcdn.com/2/72x72/1f525.png);
+      margin: 0.4rem;
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes animeBackground {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}

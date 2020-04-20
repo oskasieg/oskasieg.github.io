@@ -1,0 +1,38 @@
+nav {
+  z-index: 3;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  background: #ffe1e10d;
+  ul {
+    margin: 1rem;
+    width: 60%;
+    display: grid;
+    grid-gap: 1rem;
+    list-style-type: none;
+    justify-content: flex-end;
+    grid-template-columns: repeat(4, auto);
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      transition: all 0.3s;
+    }
+    li:hover {
+      background-color: #f0949454;
+      border-radius: 10px;
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 400px) {
+    opacity: 0;
+  }
+}
