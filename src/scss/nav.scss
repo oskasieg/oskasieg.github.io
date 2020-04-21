@@ -1,4 +1,3 @@
-nav,
 .desktop {
   --text-color: white;
   --hover-bg-color: #f0949454;
@@ -8,7 +7,7 @@ nav,
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  background: #ffe1e10d;
+  background: #ffe1e14f;
   ul {
     margin: 1rem;
     width: 60%;
@@ -36,15 +35,15 @@ nav,
   }
 
   @media (max-width: 400px) {
-    opacity: 0;
+    display: none;
   }
 }
 
 // hamburger menu
 .hamburger {
-  width: 100%;
-  z-index: 3;
   position: fixed;
+  z-index: 4;
+  width: 100%;
   margin: 1rem;
   padding: 0;
   border: 0;
@@ -57,7 +56,6 @@ nav,
       box-shadow: 0 0 2px 2px #51a7e8;
     }
   }
-
   &__container {
     display: flex;
     align-items: center;
@@ -66,7 +64,6 @@ nav,
     height: 30px;
     margin: 0 2rem;
   }
-
   &__bars {
     position: absolute;
     width: 35px;
@@ -91,12 +88,10 @@ nav,
       transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
     }
   }
-
   @media (min-width: 400px) {
     display: none;
   }
 }
-
 .hamburger--active {
   .hamburger__bars {
     transform: rotate(225deg);
@@ -112,42 +107,55 @@ nav,
     }
   }
 }
-
-.hamburger > .list {
-  display: none;
-  opacity: 0;
-}
-
-.hamburger > .list--active {
-  display: block;
-  opacity: 1;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  list-style-type: none;
-  padding: 0;
-  right: 2rem;
-  top: 2rem;
-  background-color: #b1a2a2bd;
-  border-radius: 3px;
-  transition: all 1s;
-  li {
-    padding: 0.5rem 0;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 2px;
-  }
-
-  li:last-child {
-    border: none;
-    padding: 0.5rem 0 0.5rem;
-  }
-}
-
 .hamburger,
 .hamburger__container {
   &:focus {
     outline: none;
+  }
+}
+
+.mobile {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: all 0.1s;
+}
+
+.mobile--active {
+  width: 100%;
+  height: 100%;
+  background-color: #161617;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  transform: translateY(0);
+  transition: all 0.1s;
+  .list {
+    padding: 0;
+    width: 50%;
+    height: 70%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    &__title {
+      padding: 0.5rem;
+      margin: 0 0 1rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 4px -2px white;
+      background-color: #00000029;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    &__el {
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
   }
 }

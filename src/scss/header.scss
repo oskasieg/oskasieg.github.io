@@ -5,7 +5,6 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   background-color: #00788b;
-  border-bottom: solid 5px #a300ff;
 
   .layer {
     grid-column: 1;
@@ -28,7 +27,10 @@ header {
         sans-serif;
       color: white;
       font-weight: bold;
-      font-size: 5rem;
+      font-size: 4rem;
+      @media (max-width: 400px) {
+        font-size: 1.5rem;
+      }
     }
     &__text::after {
       position: absolute;

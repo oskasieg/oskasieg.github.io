@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const aboutSection = document.querySelector('.about');
   const projectsSection = document.querySelector('.projects');
 
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.mobile');
+
   // smooth scroll
   const navItems = document.querySelectorAll('.list__el');
   navItems.forEach((el) => {
@@ -21,26 +24,40 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('click', () => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }));
         break;
       case 'Home':
-        el.addEventListener('click', () => document.querySelector('#home').scrollIntoView({ behavior: 'smooth' }));
+        el.addEventListener('click', () => {
+          menu.classList.toggle('mobile--active');
+          hamburger.classList.toggle('hamburger--active');
+          document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+        });
         break;
       case 'About':
-        el.addEventListener('click', () => document.querySelector('#about').scrollIntoView({ behavior: 'smooth' }));
+        el.addEventListener('click', () => {
+          menu.classList.toggle('mobile--active');
+          hamburger.classList.toggle('hamburger--active');
+          document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+        });
         break;
       case 'Projects':
-        el.addEventListener('click', () => document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }));
+        el.addEventListener('click', () => {
+          menu.classList.toggle('mobile--active');
+          hamburger.classList.toggle('hamburger--active');
+          document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+        });
         break;
       case 'Contact':
-        el.addEventListener('click', () => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }));
+        el.addEventListener('click', () => {
+          menu.classList.toggle('mobile--active');
+          hamburger.classList.toggle('hamburger--active');
+          document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        });
         break;
     }
   });
 
   // toggle hamburger class
-  const menu = document.querySelector('.hamburger');
-  const list = menu.querySelector('.list');
-  menu.addEventListener('click', () => {
-    menu.classList.toggle('hamburger--active');
-    list.classList.toggle('list--active');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hamburger--active');
+    menu.classList.toggle('mobile--active');
   });
 
   //////////////////////////////////

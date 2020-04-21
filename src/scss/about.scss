@@ -7,40 +7,89 @@
   background-image: linear-gradient(to bottom, #000000f2, #484848);
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40%;
   grid-template-rows: 100%;
+  align-items: center;
+
   &__left {
+    width: 70%;
+    height: 60%;
     grid-column: 1;
     grid-row: 1;
+    justify-self: center;
     background-color: #ffffff70;
-    margin: 17% 3% 20% 10%;
     border-radius: 20px;
     box-shadow: 0 0 10px 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .data {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 230px 5% 5%;
+      &__avatar {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 2rem;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      &__name {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        font-size: 1.5rem;
+        color: white;
+      }
+      &__city {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
   }
   &__right {
+    height: 50%;
+    width: 80%;
     grid-column: 2;
     grid-row: 1;
+    justify-self: center;
     background-color: #ffffff70;
-    margin: 15% 6% 15%;
     border-radius: 20px;
     box-shadow: 0 0 10px 2px;
+    .description {
+      font-size: 1.5rem;
+      padding: 2rem;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+      line-height: 2rem;
+      word-spacing: 3px;
+    }
   }
   &__right::before {
-    content: 'About';
+    content: 'About ME';
     position: absolute;
     color: #00d0bd;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transform-origin: 0% 100%;
-    transform: translateY(9rem) rotate(270deg);
+    transform: translateY(10.5rem) rotate(270deg);
   }
   &__right::after {
-    content: 'ME';
+    content: '';
     position: absolute;
     color: #00d0bd;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transform: translateY(-6rem);
+    transform: translateY(-31.5rem);
   }
   &__text1 {
     display: inline;
