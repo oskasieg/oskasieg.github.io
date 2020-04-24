@@ -1,3 +1,5 @@
+import descriptions from '../json/descriptions.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
   const nav = document.querySelector('nav');
@@ -17,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'About.':
         el.addEventListener('click', () => document.querySelector('#about').scrollIntoView({ behavior: 'smooth' }));
         break;
+      case 'Skills.':
+        el.addEventListener('click', () => document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' }));
+        break;
       case 'Projects.':
         el.addEventListener('click', () => document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }));
         break;
@@ -35,6 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('mobile--active');
           hamburger.classList.toggle('hamburger--active');
           document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+        });
+        break;
+      case 'Skills':
+        el.addEventListener('click', () => {
+          menu.classList.toggle('mobile--active');
+          hamburger.classList.toggle('hamburger--active');
+          document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' });
         });
         break;
       case 'Projects':
@@ -58,6 +70,32 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger--active');
     menu.classList.toggle('mobile--active');
+  });
+
+  // toggle icon class and set up description
+  const icons = document.querySelector('.icons').querySelectorAll('.icon');
+  const description = document.querySelector('#skills').querySelector('.content').querySelector('.description');
+  const name = description.querySelector('.description__name');
+  const text = description.querySelector('.description__text');
+  icons.forEach((el) => {
+    el.addEventListener('click', () => {
+      icons.forEach((el2) => {
+        if (el2.classList.contains('icon--active')) el2.classList.remove('icon--active');
+      });
+      el.classList.toggle('icon--active');
+      switch (el.getAttribute('name')) {
+        case 'html': {
+          name.textContent = descriptions.descriptions[0].name;
+          text.textContent = descriptions.descriptions[0].description;
+          break;
+        }
+        case 'css': {
+          name.textContent = descriptions.descriptions[1].name;
+          text.textContent = descriptions.descriptions[1].description;
+          break;
+        }
+      }
+    });
   });
 
   //////////////////////////////////
