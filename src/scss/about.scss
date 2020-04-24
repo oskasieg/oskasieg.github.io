@@ -4,8 +4,9 @@
   transition: opacity 1s;
   min-height: 110%;
   flex: 0 0 100%;
-  background-image: linear-gradient(to bottom, #000000f2, #484848);
+  background-image: linear-gradient(180deg, #1a0909, 0%, #222e33);
   display: grid;
+  border-bottom: solid white;
   grid-gap: 1rem;
   grid-template-columns: 40%;
   grid-template-rows: 100%;
