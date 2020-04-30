@@ -12,5 +12,7 @@
   },
   "author": "Krzysztof Sieg",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "emailjs-com": "^2.4.1"
+  }
 }
