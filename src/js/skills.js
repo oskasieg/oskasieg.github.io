@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       el.classList.toggle('icon--active');
 
-      if (contentIcons.classList.contains('icons') && window.innerWidth < 400) {
+      if (contentIcons.classList.contains('icons') && window.innerWidth < 900) {
         contentIcons.classList.remove('icons');
         descriptionMobile.classList.remove('descriptionMobile--hidden');
         descriptionMobile.classList.add('descriptionMobile');
@@ -120,6 +120,136 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             nameMobile.textContent = descriptions.descriptions[7].name;
             textMobile.textContent = descriptions.descriptions[7].description;
+          }
+          break;
+        }
+        case 'formik': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[8].name;
+            text.textContent = descriptions.descriptions[8].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[8].name;
+            textMobile.textContent = descriptions.descriptions[8].description;
+          }
+          break;
+        }
+        case 'rwd': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[9].name;
+            text.textContent = descriptions.descriptions[9].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[9].name;
+            textMobile.textContent = descriptions.descriptions[9].description;
+          }
+          break;
+        }
+        case 'figma': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[10].name;
+            text.textContent = descriptions.descriptions[10].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[10].name;
+            textMobile.textContent = descriptions.descriptions[10].description;
+          }
+          break;
+        }
+        case 'git': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[11].name;
+            text.textContent = descriptions.descriptions[11].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[11].name;
+            textMobile.textContent = descriptions.descriptions[11].description;
+          }
+          break;
+        }
+        case 'github': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[12].name;
+            text.textContent = descriptions.descriptions[12].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[12].name;
+            textMobile.textContent = descriptions.descriptions[12].description;
+          }
+          break;
+        }
+        case 'gitlab': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[13].name;
+            text.textContent = descriptions.descriptions[13].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[13].name;
+            textMobile.textContent = descriptions.descriptions[13].description;
+          }
+          break;
+        }
+        case 'jira': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[14].name;
+            text.textContent = descriptions.descriptions[14].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[14].name;
+            textMobile.textContent = descriptions.descriptions[14].description;
+          }
+          break;
+        }
+        case 'sql': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[15].name;
+            text.textContent = descriptions.descriptions[15].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[15].name;
+            textMobile.textContent = descriptions.descriptions[15].description;
+          }
+          break;
+        }
+        case 'json': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[16].name;
+            text.textContent = descriptions.descriptions[16].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[16].name;
+            textMobile.textContent = descriptions.descriptions[16].description;
+          }
+          break;
+        }
+        case 'java': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[17].name;
+            text.textContent = descriptions.descriptions[17].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[17].name;
+            textMobile.textContent = descriptions.descriptions[17].description;
+          }
+          break;
+        }
+        case 'c': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[18].name;
+            text.textContent = descriptions.descriptions[18].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[18].name;
+            textMobile.textContent = descriptions.descriptions[18].description;
+          }
+          break;
+        }
+        case 'cpp': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[19].name;
+            text.textContent = descriptions.descriptions[19].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[19].name;
+            textMobile.textContent = descriptions.descriptions[19].description;
+          }
+          break;
+        }
+        case 'php': {
+          if (descriptionMobile.classList.contains('descriptionMobile--hidden')) {
+            name.textContent = descriptions.descriptions[20].name;
+            text.textContent = descriptions.descriptions[20].description;
+          } else {
+            nameMobile.textContent = descriptions.descriptions[20].name;
+            textMobile.textContent = descriptions.descriptions[20].description;
           }
           break;
         }

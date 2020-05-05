@@ -28,7 +28,7 @@ header {
       color: white;
       font-weight: bold;
       font-size: 4rem;
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         font-size: 1.5rem;
       }
     }
@@ -36,7 +36,7 @@ header {
       position: absolute;
       content: url(https://twemoji.maxcdn.com/2/72x72/1f525.png);
       margin: 0.4rem;
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         display: none;
       }
     }

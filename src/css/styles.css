@@ -24,14 +24,14 @@ header {
       color: white;
       font-weight: bold;
       font-size: 4rem; }
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         header .homeWrapper__text {
           font-size: 1.5rem; } }
     header .homeWrapper__text::after {
       position: absolute;
       content: url(https://twemoji.maxcdn.com/2/72x72/1f525.png);
       margin: 0.4rem; }
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         header .homeWrapper__text::after {
           display: none; } }
 
@@ -72,7 +72,7 @@ header {
       background-color: var(--hover-bg-color);
       border-radius: 10px;
       text-decoration: underline; }
-  @media (max-width: 400px) {
+  @media (max-width: 900px) {
     .desktop {
       display: none; } }
 
@@ -115,7 +115,7 @@ header {
     .hamburger__bars:after {
       bottom: -12px;
       transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out; }
-  @media (min-width: 400px) {
+  @media (min-width: 900px) {
     .hamburger {
       display: none; } }
 
@@ -199,6 +199,10 @@ header {
       width: 250px;
       height: 250px;
       margin-right: 2rem; }
+      @media (max-width: 900px) {
+        .about__left .avatar {
+          height: 150px;
+          width: 150px; } }
       .about__left .avatar img {
         box-shadow: 0 0 20px 6px #009688;
         width: 100%;
@@ -214,12 +218,15 @@ header {
     margin-top: 15%;
     position: relative; }
     .about__right .description {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       padding: 2rem;
       color: white;
       font-family: 'Barlow Condensed', sans-serif;
       line-height: 2rem;
       word-spacing: 3px; }
+      @media (min-width: 1300px) {
+        .about__right .description {
+          font-size: 1.5rem; } }
   .about__right::before {
     content: '';
     position: absolute;
@@ -267,7 +274,7 @@ header {
   background-image: linear-gradient(180deg, #1a0909, 0%, #222e33);
   display: flex;
   align-items: center; }
-  @media (min-width: 400px) {
+  @media (min-width: 900px) {
     #contact {
       justify-content: center; } }
   #contact .content {
@@ -280,7 +287,7 @@ header {
     flex-flow: column wrap;
     justify-content: flex-start;
     padding: 1.5rem; }
-    @media (min-width: 400px) {
+    @media (min-width: 900px) {
       #contact .content {
         flex: 0 0 50%;
         margin-top: 5.5rem;
@@ -327,7 +334,7 @@ header {
         height: 30px;
         border-radius: 10px;
         border: none; }
-        @media (min-width: 400px) {
+        @media (min-width: 900px) {
           #contact .content .form button {
             width: 15%; } }
       #contact .content .form__buttonSubmit {
@@ -339,7 +346,7 @@ header {
         color: white;
         font-size: 1rem; }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   .about {
     width: 100%;
     height: auto;
@@ -385,7 +392,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-items: center; }
-  @media (min-width: 400px) {
+  @media (min-width: 900px) {
     .footer {
       min-height: 5%; } }
   .footer__text {
@@ -424,7 +431,7 @@ header {
     height: 80%;
     display: flex;
     flex-flow: row wrap; }
-    @media (min-width: 400px) {
+    @media (min-width: 900px) {
       .skills .content {
         height: 75%; } }
     .skills .content .title {
@@ -441,7 +448,7 @@ header {
       height: 83%;
       flex-wrap: wrap;
       align-items: flex-start; }
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         .skills .content .icons {
           flex: 0 0 50%; } }
       .skills .content .icons .icon {
@@ -477,7 +484,7 @@ header {
       background-color: #5d7976;
       display: flex;
       flex-wrap: wrap; }
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         .skills .content .descriptionMobile {
           display: none; } }
       .skills .content .descriptionMobile__name {
@@ -512,7 +519,7 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         .skills .content .description {
           display: none; } }
       .skills .content .description__name {
@@ -535,7 +542,7 @@ header {
       color: white;
       flex: 0 0 100%;
       text-align: right; }
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         .skills .content .text {
           display: none; } }
     .skills .content .text--hidden {

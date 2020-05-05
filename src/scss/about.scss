@@ -23,6 +23,10 @@
       width: 250px;
       height: 250px;
       margin-right: 2rem;
+      @media (max-width: 900px) {
+        height: 150px;
+        width: 150px;
+      }
       img {
         box-shadow: 0 0 20px 6px #009688;
         width: 100%;
@@ -41,12 +45,15 @@
     margin-top: 15%;
     position: relative;
     .description {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       padding: 2rem;
       color: white;
       font-family: 'Barlow Condensed', sans-serif;
       line-height: 2rem;
       word-spacing: 3px;
+      @media (min-width: 1300px) {
+        font-size: 1.5rem;
+      }
     }
   }
   &__right::before {

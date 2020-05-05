@@ -34,7 +34,7 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 900px) {
     display: none;
   }
 }
@@ -88,7 +88,7 @@
       transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
     }
   }
-  @media (min-width: 400px) {
+  @media (min-width: 900px) {
     display: none;
   }
 }

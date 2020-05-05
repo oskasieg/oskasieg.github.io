@@ -15,7 +15,7 @@
     height: 80%;
     display: flex;
     flex-flow: row wrap;
-    @media (min-width: 400px) {
+    @media (min-width: 900px) {
       height: 75%;
     }
     .title {
@@ -35,7 +35,7 @@
       height: 83%;
       flex-wrap: wrap;
       align-items: flex-start;
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         flex: 0 0 50%;
       }
       .icon {
@@ -73,7 +73,7 @@
       display: none;
     }
     .descriptionMobile {
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         display: none;
       }
       flex: 0 0 100%;
@@ -112,7 +112,7 @@
       }
     }
     .description {
-      @media (max-width: 400px) {
+      @media (max-width: 900px) {
         display: none;
       }
       flex: 0 0 50%;
@@ -144,7 +144,7 @@
       color: white;
       flex: 0 0 100%;
       text-align: right;
-      @media (min-width: 400px) {
+      @media (min-width: 900px) {
         display: none;
       }
     }
