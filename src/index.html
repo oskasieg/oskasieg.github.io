@@ -121,11 +121,11 @@
             <h1>Let's talk</h1>
             <form class='form'>
                 <label class='form__label'>Name:</label>
-                <input type='text' placeholder='Enter your name' class='form__input' />
+                <input id="name" type='text' placeholder='Enter your name' class='form__input' />
                 <label class='form__label'>Email address:</label>
-                <input type='text' placeholder='Enter your email address' class='form__input' />
+                <input id='email' type='text' placeholder='Enter your email address' class='form__input' />
                 <label class='form__label'>Message:</label>
-                <textarea class='form__textarea' placeholder='Enter your message'"></textarea>
+                <textarea id='message' class='form__textarea' placeholder='Enter your message'"></textarea>
                 <button type='submit' class='form__buttonSubmit'>SEND</button>
                 <button type='reset' class='form__buttonReset'>RESET</button>
             </form>
@@ -142,6 +142,9 @@
     <script src='./js/script.js' type='module'></script>
     <script src='./js/skills.js' type='module'></script>
     <script src='./js/nav.js' type='module'></script>
+    <script src='./js/contact.js' type='module'></script>
+    <script src=" https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>

@@ -284,7 +284,7 @@ header {
     background-color: #d4d4d417;
     margin-top: 2.5rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     padding: 1.5rem; }
     @media (min-width: 900px) {
