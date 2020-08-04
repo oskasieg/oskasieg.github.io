@@ -1,0 +1,17 @@
+#projects {
+  min-height: 100%;
+  flex: 0 0 100%;
+  background-image: linear-gradient(180deg, #1a0909, 0%, #222e33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid white;
+  .container {
+    padding: 1rem;
+    background-color: #d4d4d417;
+    flex: 0 0 80%;
+    min-height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krzysztof Sieg | Portfolio</title>
+    <link rel='stylesheet' href='./css/styles.css'>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class='desktop'>
+        <ul class='list'>
+            <li class='list__el'>Home.</li>
+            <li class='list__el'>About.</li>
+            <li class='list__el'>Skills.</li>
+            <li class='list__el'>Projects.</li>
+            <li class='list__el'>Contact.</li>
+        </ul>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+        <span class="hamburger__container" tabindex="-1">
+            <span class="hamburger__bars"></span>
+        </span>
+    </button>
+    <nav class='mobile'>
+        <ul class='list'>
+            <li class='list__title'>MENU</li>
+            <a href='#home' class='list__el'>Home</a>
+            <a href='#about' class='list__el'>About</a>
+            <a href='#skills' class='list__el'>Skills</a>
+            <a href='#projects' class='list__el'>Projects</a>
+            <a href='#contact' class='list__el'>Contact</a>
+        </ul>
+    </nav>
+    <!-- HEADER -->
+    <header id='home'>
+        <div class='layer'></div>
+        <div class='homeWrapper'>
+            <div class='homeWrapper__text'> Hello, I am Chris</div>
+
+        </div>
+    </header>
+    <section id='about' class='about'>
+        <div class='about__left'>
+            <div class='avatar'>
+                <img src='../assets/avatar.png' alt='me' />
+            </div>
+        </div>
+        <div class='about__right'>
+            <div class='description'>
+                Hi. My name is Krzysztof Sieg. I am 23 years old. I am 3rd year IT engineering student at Nicolaus
+                Copernicus University in Toruń. Since I remember I was interested in IT. For the first two years of
+                college
+                I was learning about algorithms, maths, networks and basics of programming in different languages (C,
+                C++, Java, PHP). Half year ago I started learning about Frontend technologies and I am still learning
+                and
+                discovering new things about it. I participate in different courses about web design and creating web
+                applications. I am also member of the team where we create fullstack application as part of studies. My
+                role is Frontend developer.
+            </div>
+        </div>
+    </section>
+    <section id='skills' class='skills'>
+        <div class='content'>
+            <h1 class='title'>Skills:</h1>
+            <div class='icons'>
+                <div name='html' class='icon icon--active'><img src='../assets/htmlIcon.png' alt='html' /></div>
+                <div name='css' class='icon'><img src='../assets/cssIcon.png' alt='css' /></div>
+                <div name='javascript' class='icon'><img style='height: 57px' src='../assets/javascriptIcon.png'
+                        alt='' /></div>
+                <div name='react' class='icon'><img src='../assets/reactIcon.png' alt='react' /></div>
+                <div name='ts' class='icon'><img src='../assets/typescriptIcon.png' alt='ts' /></div>
+                <div name='scss' class='icon'><img src='../assets/scssIcon.png' alt='scss' /></div>
+                <div name='redux' class='icon'><img style='height: 40px; width: 45px' src='../assets/reduxIcon.png'
+                        alt='redux' />
+                </div>
+                <div name='saga' class='icon'><img src='../assets/reduxSagaIcon.png' alt='saga' /></div>
+                <div name='formik' class='icon'><img src='../assets/formikIcon.png' alt='formik' /></div>
+                <div name='rwd' class='icon'><img src='../assets/rwdIcon.png' alt='rwd' /></div>
+                <div name='figma' class='icon'><img style='height: 45px; width: 45px' src='../assets/figmaIcon.svg'
+                        alt='figma' />
+                </div>
+                <div name='git' class='icon'><img src='../assets/gitIcon.png' alt='git' /></div>
+                <div name='github' class='icon'><img src='../assets/githubIcon.png' alt='github' /></div>
+                <div name='gitlab' class='icon'><img src='../assets/gitlabIcon.png' alt='gitlab' /></div>
+                <div name='jira' class='icon'><img style='width:47px; height: 47px' src='../assets/jiraIcon.png'
+                        alt='jira' /></div>
+                <div name='sql' class='icon'><img src='../assets/sqlIcon.png' alt='sql' /></div>
+                <div name='json' class='icon'><img src='../assets/jsonIcon.png' alt='json' /></div>
+                <div name='java' class='icon'><img style='height: 55px; width: 55px' src='../assets/javaIcon.png'
+                        alt='java' />
+                </div>
+                <div name='c' class='icon'><img src='../assets/cIcon.png' alt='c' /></div>
+                <div name='cpp' class='icon'><img style='height: 43px; width: 40px' src='../assets/cppIcon.png'
+                        alt='cpp' /></div>
+                <div name='php' class='icon'> <img src='../assets/phpIcon.png' alt='php' /></div>
+            </div>
+            <div class='descriptionMobile--hidden'>
+                <div class='descriptionMobile__name'>
+                    HTML
+                </div>
+                <div class='descriptionMobile__text'>
+                    I know how to make structure of document. I am using the newest ideas for
+                    naming selectors and elements. </div>
+                <div class='descriptionMobile__button'><img src='../assets/exit.svg' alt='back' /></div>
+            </div>
+            <div class='description'>
+                <h3 class='description__name'>HTML</h3>
+                <p class='description__text'>I know how to make structure of document. I am using the newest ideas for
+                    naming selectors and elements.</p>
+            </div>
+            <h3 class='text'>and more...</h3>
+        </div>
+    </section>
+    <section id='projects' class='projects'>
+        <div class="container">
+
+        </div>
+    </section>
+    <section id='contact'>
+        <div class='content'>
+            <h1>Let's talk</h1>
+            <form class='form'>
+                <label class='form__label'>Name:</label>
+                <input id="name" type='text' placeholder='Enter your name' class='form__input' />
+                <label class='form__label'>Email address:</label>
+                <input id='email' type='text' placeholder='Enter your email address' class='form__input' />
+                <label class='form__label'>Message:</label>
+                <textarea id='message' class='form__textarea' placeholder='Enter your message'"></textarea>
+                <button type='submit' class='form__buttonSubmit'>SEND</button>
+                <button type='reset' class='form__buttonReset'>RESET</button>
+            </form>
+        </div>
+    </section>
+    <footer id='footer' class='footer'>
+        <div class='footer__text'>
+            &copy; Copyright 2020
+        </div>
+        <div class='footer__icons'>
+            <a href='https://www.linkedin.com/in/krzysztof-sieg-195733174/'><img src='../assets/linkedin.svg' /></a><a
+                href='https://github.com/oskasieg'><img src='../assets/github.svg' /></div></a>
+    </footer>
+    <script src='./js/script.js' type='module'></script>
+    <script src='./js/skills.js' type='module'></script>
+    <script src='./js/nav.js' type='module'></script>
+    <script src='./js/contact.js' type='module'></script>
+    <script src=" https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+
+</html>

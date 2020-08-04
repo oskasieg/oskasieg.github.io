@@ -1,0 +1,44 @@
+.about {
+  @media (max-width: 900px) {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 5fr;
+    &__left {
+      grid-row: 1;
+      grid-column: 1;
+      justify-self: center;
+      align-self: flex-end;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      .avatar {
+        margin: 0;
+      }
+    }
+    &__right {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 2;
+      width: 80%;
+      height: auto;
+      align-self: flex-start;
+      margin: 0 0 3rem;
+      box-shadow: 0 0 10px 2px;
+
+      .description {
+        font-size: 1rem;
+        padding: 2rem;
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        line-height: 2rem;
+        word-spacing: 3px;
+      }
+    }
+    &__right:before {
+      display: none;
+    }
+  }
+}

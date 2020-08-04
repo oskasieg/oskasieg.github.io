@@ -1,0 +1,22 @@
+@import 'header.scss';
+@import 'nav.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'contact.scss';
+@import 'about_mobile.scss';
+@import 'footer.scss';
+@import 'skills.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
